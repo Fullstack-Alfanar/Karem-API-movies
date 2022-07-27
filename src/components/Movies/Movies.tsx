@@ -13,7 +13,7 @@ const Movies: React.FC = (data: any) => {
         await fetch("https://api.tvmaze.com/shows")
             .then((response) => response.json())
             .then((res) => setMovies(res))
-            .catch(err=>console.log(err));
+            .catch(err => console.log(err));
     };
 
     const Movies: any = movies.filter((obj: any) => {
